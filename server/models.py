@@ -1,4 +1,3 @@
-from sqlalchemy.orm import validates
 from sqlalchemy.ext.hybrid import hybrid_property
 from sqlalchemy_serializer import SerializerMixin
 
@@ -8,6 +7,7 @@ class User(db.Model, SerializerMixin):
     __tablename__ = 'users'
 
     pass
+
 
 class Recipe(db.Model, SerializerMixin):
     __tablename__ = 'recipes'
